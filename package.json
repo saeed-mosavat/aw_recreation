@@ -1,0 +1,22 @@
+{
+  "name": "Asha Wash",
+  "version": "1.0.0",
+  "description": "Asha Wash Recreation",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Saeed Mosavat",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-v4-rtl": "^4.1.1-0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "tether": "^1.4.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
