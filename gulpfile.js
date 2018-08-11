@@ -24,7 +24,8 @@ gulp.task('js', function(){
 // watch SASS and serve
 gulp.task('serve', ['sass'], function(){
 	browserSync.init({
-		server: './src'
+		server: './src',
+        notify: false
 	});
 
 	gulp.watch(['node_modules/bootstrap-v4-rtl/scss/bootstrap-rtl.scss', 'src/scss/*.scss'], ['sass']);
