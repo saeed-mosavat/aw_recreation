@@ -3,15 +3,12 @@ $purple: #8d73a4;
 
 
 
-*{
-    box-sizing: border-box;
-}
 
 
 body{
     font-family: Yekan, tahoma, sans-serif;
     
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 }
 
 .bg-blue{
@@ -24,9 +21,15 @@ body{
 
 .navbar{
     min-height: 80px;
-    .container{position: relative;}
     
+    #navbar-brand-wraper{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 42px;
+    }
     #navbar-brand{
+        padding: 0;
         img{
             height: 75px;
             width: auto;
@@ -60,27 +63,76 @@ body{
 }
 
 #home{
-    height: 100%;
+    min-height: 100vh;
     padding-top: 80px;
-    #map-wrapper{
-        height: 40%;
-    }
+    
 }
 
-
-@media (max-width: 767.98px) {
-    #navbar-brand-wraper{
-        position: absolute;
-        left: 15%;
-        top: 23px;
-    }
+.btn-light{
+    color: $purple;
 }
 
+/*  LG up*/
 @media (min-width: 768px) {
-    #navbar-brand-wraper{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: 23px;
+    #start-icon{
+        width: 100%;
+        margin-top: -50px;
+    }
+}
+
+
+/*  MD down */
+@media (max-width: 767.98px) {
+    .navbar{
+        .navbar-nav{
+            .nav-item{
+                margin-bottom: -20px;
+                .nav-link{
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+        }
+    }
+
+    #home{
+        .btn-block{
+            width: 60%;
+        }
+    }
+
+    #start-icon{
+        width: 200px;
+        margin-top: -50px;
+    }
+}
+
+
+
+
+/*  XS */
+@media (max-width: 575.98px) {
+    .navbar{
+        #navbar-brand-wraper{
+            top: 13px;
+        }
+        #navbar-brand{
+            img{
+                height: 55px;
+                width: auto;
+            }
+        }
+        
+        .navbar-nav{
+            .nav-item{
+                margin-bottom: -10px;
+                .nav-link{
+                    width: 65px;
+                    height: 65px;
+                    color: $purple;
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }
