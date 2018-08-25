@@ -40,6 +40,9 @@ body {
   min-height: 100vh;
   padding-top: 80px; }
 
+.btn {
+  border-radius: 8px; }
+
 .btn-light {
   color: #8d73a4; }
 
